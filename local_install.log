@@ -1,0 +1,215 @@
+
+#=======================================================================
+#
+# 解决“软件” 已损坏，无法打开的问题
+#
+#=======================================================================
+
+sudo xattr -r -d com.apple.quarantine <path>
+#示例：
+sudo xattr -r -d com.apple.quarantine /Users/ruanct/Downloads/Royal_TSX/防官方验证.app
+
+#=======================================================================
+#
+# 破解安装以下软件
+#
+#=======================================================================
+
+Google chrome, App Clean, v2rayU, iina, itsycal, 
+Snipaste, Termius, SecureCRT,SecureFX, Navicat, Datagrip, 
+Sublime, InteliJ IDEA, Pycharm, 
+sogou输入法, Paragon NTFS Mac
+
+
+#=======================================================================
+#
+# APP Store安装以下软件
+#
+#=======================================================================
+wps office、优酷、腾讯视频、爱奇艺视频、有道云笔记、网易云音乐、Foxmail、QQ、微信、钉钉
+
+---- 腾讯课堂、哔哩哔哩、极客时间、有道精品课 没有APP，只能走网站
+
+#=======================================================================
+#
+# 重启启动台, 会把图标重新规整 
+#
+#=======================================================================
+
+defaults write com.apple.dock ResetLaunchPad -bool true && killall Dock
+
+
+#=======================================================================
+#
+#  homebrew 安装记录
+#
+#  macOS安装Homebrew彻底免坑教程 https://my.oschina.net/u/4162142/blog/4784996
+#
+#=======================================================================
+
+## 首先要安装xcode-select,非root下执行以下命令:
+xcode-select --install
+
+
+## 安装 homebrew
+/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+
+               开始执行Brew自动安装程序 
+              [cunkai.wang@foxmail.com] 
+           ['2021-03-24 22:12:31']['10.15']
+        https://zhuanlan.zhihu.com/p/111014448 
+
+
+请选择一个下载镜像，例如中科大，输入1回车。
+源有时候不稳定，如果git克隆报错重新运行脚本选择源。cask非必须，有部分人需要。
+1、中科大下载源 2、清华大学下载源 3、北京外国语大学下载源  4、腾讯下载源（不推荐） 5、阿里巴巴下载源(不推荐 缺少cask源)  
+
+请输入序号: 3
+
+
+    北京外国语大学下载源
+    
+！！！此脚本将要删除之前的brew(包括它下载的软件)，请自行备份。
+->是否现在开始执行脚本（N/Y） Y
+
+--> 脚本开始执行
+ Mac os设置开机密码方法：
+  (设置开机密码：在左上角苹果图标->系统偏好设置->用户与群组->更改密码)
+  (如果提示This incident will be reported. 在用户与群组中查看是否管理员) 
+==> 通过命令删除之前的brew、创建一个新的Homebrew文件夹
+请输入开机密码，输入过程不显示，输入完后回车
+Password:
+开始执行
+-> 创建文件夹 /usr/local/Homebrew
+运行代码 ==> /usr/bin/sudo /bin/mkdir -p /usr/local/Homebrew
+此步骤成功
+运行代码 ==> /usr/bin/sudo /bin/chmod -R a+rwx /usr/local/Homebrew
+运行代码 ==> /usr/bin/sudo /usr/sbin/chown ruanct /usr/local/Homebrew
+运行代码 ==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/Homebrew
+git version 2.24.3 (Apple Git-128)
+
+下载速度觉得慢可以ctrl+c或control+c重新运行脚本选择下载源
+==> 克隆Homebrew基本文件
+
+未发现Git代理（属于正常状态）
+Cloning into '/usr/local/Homebrew'...
+remote: Enumerating objects: 177395, done.
+remote: Counting objects: 100% (177395/177395), done.
+remote: Compressing objects: 100% (47310/47310), done.
+remote: Total 177395 (delta 131145), reused 170334 (delta 126004)
+Receiving objects: 100% (177395/177395), 45.86 MiB | 8.07 MiB/s, done.
+Resolving deltas: 100% (131145/131145), done.
+此步骤成功
+--创建Brew所需要的目录
+运行代码 ==> /usr/bin/sudo /bin/mkdir -p /usr/local/bin /usr/local/etc /usr/local/include /usr/local/lib /usr/local/sbin /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+运行代码 ==> /usr/bin/sudo /bin/chmod g+rwx /usr/local/bin /usr/local/etc /usr/local/include /usr/local/lib /usr/local/sbin /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+运行代码 ==> /usr/bin/sudo /usr/sbin/chown ruanct /usr/local/bin /usr/local/etc /usr/local/include /usr/local/lib /usr/local/sbin /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+运行代码 ==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/bin /usr/local/etc /usr/local/include /usr/local/lib /usr/local/sbin /usr/local/share /usr/local/var /usr/local/opt /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/homebrew /usr/local/var/homebrew/linked /usr/local/Cellar /usr/local/Caskroom /usr/local/Frameworks
+运行代码 ==> /usr/bin/sudo /usr/sbin/chown -R ruanct:admin /usr/local/Homebrew
+运行代码 ==> /usr/bin/sudo /bin/mkdir -p /Users/ruanct/Library/Caches/Homebrew
+运行代码 ==> /usr/bin/sudo /bin/chmod g+rwx /Users/ruanct/Library/Caches/Homebrew
+运行代码 ==> /usr/bin/sudo /usr/sbin/chown -R ruanct /Users/ruanct/Library/Caches/Homebrew
+--依赖目录脚本运行完成
+==> 创建brew的替身
+==> 克隆Homebrew Core
+此处如果显示Password表示需要再次输入开机密码，输入完后回车
+Cloning into '/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core'...
+remote: Enumerating objects: 930229, done.
+remote: Counting objects: 100% (930229/930229), done.
+remote: Compressing objects: 100% (330338/330338), done.
+remote: Total 930229 (delta 624988), reused 884685 (delta 596794)
+Receiving objects: 100% (930229/930229), 279.00 MiB | 8.64 MiB/s, done.
+Resolving deltas: 100% (624988/624988), done.
+Updating files: 100% (5827/5827), done.
+此步骤成功
+==> 克隆Homebrew Cask 图形化软件
+  此处如果显示Password表示需要再次输入开机密码，输入完后回车
+Cloning into '/usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask'...
+remote: Enumerating objects: 559394, done.
+remote: Counting objects: 100% (559394/559394), done.
+remote: Compressing objects: 100% (173537/173537), done.
+remote: Total 559394 (delta 395179), reused 546001 (delta 384331)
+Receiving objects: 100% (559394/559394), 224.50 MiB | 2.08 MiB/s, done.
+Resolving deltas: 100% (395179/395179), done.
+此步骤成功
+==> 克隆Homebrew services 管理服务的启停
+  
+Cloning into '/usr/local/Homebrew/Library/Taps/homebrew/homebrew-services'...
+remote: Enumerating objects: 1141, done.
+remote: Counting objects: 100% (1141/1141), done.
+remote: Compressing objects: 100% (495/495), done.
+remote: Total 1141 (delta 484), reused 1141 (delta 484), pack-reused 0
+Receiving objects: 100% (1141/1141), 331.50 KiB | 500.00 KiB/s, done.
+Resolving deltas: 100% (484/484), done.
+此步骤成功
+==> 配置国内镜像源HOMEBREW BOTTLE
+sed: /Users/ruanct/.zprofile: No such file or directory
+环境变量写入->/Users/ruanct/.zprofile
+此步骤成功
+运行代码 ==> /usr/bin/sudo /bin/chmod -R a+rwx /usr/local/Homebrew
+运行代码 ==> /usr/bin/sudo /usr/sbin/chown ruanct /usr/local/Homebrew
+运行代码 ==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/Homebrew
+
+==> 安装完成，brew版本
+
+Homebrew 3.0.8-44-g00d8e1a-dirty
+Homebrew/homebrew-core (git revision 65b3415b47; last commit 2021-03-24)
+Homebrew/homebrew-cask (git revision b5f31bae09; last commit 2021-03-24)
+Brew前期配置成功
+电脑系统版本：10.15
+==> Downloading https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/bottles-portable-ruby/portable-ruby-2.6.3_2.yosemite.bottle.tar.gz
+############################################################################################################################################################################## 100.0%
+==> Pouring portable-ruby-2.6.3_2.yosemite.bottle.tar.gz
+All user-space services OK, nothing cleaned...
+
+  ==> brew update
+  
+==> Homebrew has enabled anonymous aggregate formula and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics have been recorded yet (nor will be during this `brew` run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+Already up-to-date.
+
+        Brew自动安装程序运行完成
+          国内地址已经配置完成
+
+  桌面的Old_Homebrew文件夹，大致看看没有你需要的可以删除。
+
+              初步介绍几个brew命令
+本地软件库列表：brew ls
+查找软件：brew search google（其中google替换为要查找的关键字）
+查看brew版本：brew -v  更新brew版本：brew update
+安装cask软件：brew install --cask firefox 把firefox换成你要安装的
+        
+        欢迎右键点击下方地址-打开URL 来给点个赞
+         https://zhuanlan.zhihu.com/p/111014448 
+
+ 重启终端 或者 运行 source /Users/ruanct/.zprofile  ，否则可能无法使用
+
+
+#=======================================================================
+#
+# 安装mysql 5.7.31 社区版
+#
+#=======================================================================
+
+双击安装包，安装完成之后，会给一个root用户密码
+
+mysql.server Usage: 
+mysql.server {start|stop|restart|reload|force-reload|status}  [ MySQL server options ]
+
+启动mysql
+sudo /usr/local/mysql/support-files/mysql.server status
+sudo /usr/local/mysql/support-files/mysql.server start
+sudo /usr/local/mysql/support-files/mysql.server stop
+sudo /usr/local/mysql/support-files/mysql.server restart
+sudo /usr/local/mysql/support-files/mysql.server reload
+
+## password is uc>(mrVzq9dU   ==> ruanct
+mysql -uroot -p 
+mysql> alter user 'root'@'localhost' identified by 'ruanct';
+mysql> flush privileges;
+
